@@ -1,0 +1,23 @@
+header {
+  display: flex;
+}
+
+header > div:nth-child(3) {
+  margin-left: auto;
+}
+
+.header-links {
+  margin: 10px;
+}
+
+footer {
+  display: flex;
+}
+
+footer > div:nth-child(3) {
+  margin-left: auto;
+}
+
+.footer-links {
+  margin: 10px;
+}
