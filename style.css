@@ -1,11 +1,22 @@
 html, body {
   height: 100%;
+  -webkit-appearance: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
   display: flex;
   flex-direction: column;
 }
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #609;
+}
+
 
 header {
   display: flex;
@@ -18,6 +29,12 @@ header > div:nth-child(3) {
 .header-links {
   margin: 10px;
 }
+
+.header-links a {
+  color: #000000;
+}
+
+
 
 .content {
   flex: 1 0 auto;
@@ -34,7 +51,6 @@ header > div:nth-child(3) {
 #search-form {
   display: flex;
   align-content: center;
-  border: 1pt red solid;
   justify-content: center;
   align-content: space-between;
   padding: 10px;
@@ -42,29 +58,26 @@ header > div:nth-child(3) {
 
 #search-box {
   display: flex;
-  /* align-items: center; */
   justify-content: center;
-  border: 1pt green solid;
   margin: auto;
   border-radius: 25px;
   width: 100%;
+  height: 40px;
 }
 
-form {
-  /* align-items: center; */
-}
 
 #standard-search, #random-search {
-  /* align-self: center; */
   padding: 10px;
   margin: 10px;
   justify-content: center;
+  border-radius: 10px;
+  
 }
 
 footer {
   display: flex;
   flex-shrink: 0;
-  /* align-content: flex-end; */
+  background: #f2f2f2;
 }
 
 footer > div:nth-child(3) {
@@ -74,3 +87,6 @@ footer > div:nth-child(3) {
 .footer-links {
   margin: 15px;
 }
+
+.footer-links a {
+  color:  #5f6368;
